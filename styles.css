@@ -1,0 +1,202 @@
+* {
+  margin:0;
+  font-family: "Hiragino Kaku Gothic ProN";
+}
+body {
+  width:100%;
+  margin:0 auto;
+  background-color: #fbf7f0;
+}
+
+
+header {
+  height:100px;
+  display: flex;
+  background-color: #555555;
+}
+span {
+  display:none;
+}
+.header-left {
+  flex:1;
+}
+.header-left a {
+  line-height: 100px;
+  text-align: center;
+  font-size: 40px;
+  color:white;
+  padding-left:20px;
+  text-decoration: none;
+  color:white;
+}
+
+.header-right {
+  flex:3;
+}
+.header-right ul {
+  padding:0;
+  list-style: none;
+  display: flex;
+  flex-direction: row-reverse;
+}
+.header-right li {
+  width:20%;
+  height:100px;
+  line-height:100px;
+  text-align: center;
+  font-size: 19px;
+  border-left:1px solid white;
+  display: inline-block;
+}
+.header-right ul a {
+  display: block;
+  line-height:100px;
+  text-decoration: none;
+  color:white;
+  font-size: 25px;
+}
+
+.header-right ul a:hover {
+  background-color: #686767;
+}
+.contents {
+  display: flex;
+  /* height:100vh; */
+  max-width:1100px;
+  width:100%;
+  margin:0 auto;
+} 
+nav {
+  width:200px;
+  background-color: #d9e4dd;
+  padding-bottom:50px;
+}
+nav div {
+  border:1px solid black;
+  margin:4px;
+  margin-bottom:30px;
+}
+nav img {
+  width:160px;
+  display:block;
+  margin:40px auto 10px;
+  
+}
+
+aside {
+  width:200px;
+  background-color: #d9e4dd;
+  padding-bottom:50px;
+  display: flex;
+  flex-direction: column;
+}
+aside img {
+  width:90%;
+  display: block;
+  margin:0 auto;
+}
+aside div {
+  margin: 50px auto;
+}
+aside p {
+  text-align: center;
+  font-weight: normal;
+  font-size: 20px;
+}
+main {
+  flex:1;
+  background-color: #fbf7f0;
+  padding-bottom:50px;
+}
+main h1{
+  text-align: center;
+  font-size: 35px;
+  font-weight: normal;
+  padding-top:20px;
+}
+main span {
+  color:blue;
+}
+main h2 {
+  text-align: center;
+  font-size: 25px;
+  font-weight: normal;
+  padding:20px 0;
+  text-decoration: underline;
+}
+main p {
+  width:70%;
+  margin:0 auto;
+  text-align: center;
+}
+.main-contents img {
+  width:350px;
+  border:10px solid #d9e4dd;
+  border-radius: 10px;
+  display: block;
+  margin:0 auto;
+}
+footer {
+  height:100px;
+  background-color: #555555;
+  color:white;
+}
+footer p {
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+
+
+
+
+
+@media screen and (max-width:900px){
+  .header-mobile {
+    height:100px;
+    display: flex;
+    background-color: #555555;
+    color:white;
+  }
+  .header-pc {
+    display: none;
+  }
+  
+  
+  
+  
+  
+  .contents {
+    
+    flex-direction:column;
+  }
+  nav {
+    display:none;
+  }
+  aside {
+    width:100%;
+  }
+  aside   {
+    flex-direction: row;
+    display:flex;
+  }
+  aside div {
+    width:70%;
+    flex-wrap: wrap;
+    
+  }
+  aside .ad-intro{
+    display:none;
+  }
+  aside p {
+    font-size:10px;
+  }
+  aside img {
+    width:50%;
+    display:block;
+    margin:0 auto;
+  }
+  .ad1 {
+    display:none;
+  }
+}
